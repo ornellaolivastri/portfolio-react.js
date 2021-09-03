@@ -3,7 +3,7 @@ import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
         container: {
-            background: theme.background,
+            background: '#99e6ff',
             padding: '4vw'
         }
     }));
