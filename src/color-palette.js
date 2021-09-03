@@ -1,0 +1,36 @@
+export const primary = {
+
+    50   : '#e4e4e4',
+    50   : '#e0e2ed',
+    100  : '#b3b7d1',
+    200  : '#8088b3',
+    300  : '#4d5895',
+    400  : '#26347e',
+    500  : '#001067',
+    600  : '#000e5f',
+    700  : '#000c54',
+    800  : '#00094a',
+    900  : '#000539',
+    A100 : '#6f73ff',
+    A200 : '#3c42ff',
+    A400 : '#0910ff',
+    A700 : '#0007ef',
+};
+
+export const secondary = {
+    50   : '#fefafa',
+    100  : '#fdf4f4',
+    200  : '#fbecec',
+    300  : '#f9e4e4',
+    400  : '#f8dfdf',
+    500  : '#f7d9d9',
+    600  : '#f6d5d5',
+    700  : '#f5cfcf',
+    800  : '#f3caca',
+    900  : '#f1c0c0',
+    A100 : '#ffffff',
+    A200 : '#ffffff',
+    A400 : '#ffffff',
+    A700 : '#ffffff',
+    'contrastDefaultColor': 'dark',
+};

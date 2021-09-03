@@ -11,21 +11,25 @@ const useStyles = makeStyles((theme) => ({
     }));
 
 export function NavBar(){
-    return (
-        <div className={useStyles.root} >
-    <AppBar position="static">
-        <Toolbar>
-          <IconButton edge="start" className="menuButton" color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" className="title" > lololololo lolo lolololololololo lo lo </Typography>
-          
-          <Button color="inherit">About me</Button>
-          <Button color="inherit">Studies</Button>
-          <Button color="inherit">Contact</Button>
+  const classes = useStyles(); 
+  
+  return (
+      <div className={classes.root} >
+        <AppBar position="static">
+          <Toolbar>
 
-        </Toolbar>
-      </AppBar>
+            <IconButton edge="start" className="menuButton" color="inherit" aria-label="menu">
+              <MenuIcon />
+            </IconButton>
+
+            <Typography variant="h6" className="title" > lololololo lolo lolololololololo lo lo </Typography>
+            
+            <Button color="inherit">About me</Button>
+            <Button color="inherit">Studies</Button>
+            <Button color="inherit">Contact</Button>
+
+          </Toolbar>
+        </AppBar>
       </div>
     );
 }
