@@ -3,7 +3,8 @@ import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
         container: {
-            background: '#e6f3ff',
+            background: theme.palette.secondary.light,
+            color: theme.palette.primary.contrastText,
             padding: '2vw'
         }
     }));
@@ -13,8 +14,9 @@ const classes = useStyles();
 
     return (
     
+    <div className={classes.container}  >
+
     <Grid 
-        className={classes.container} 
         container direction="column" 
         justifyContent="space-around" 
         spacing ={1} 
@@ -41,5 +43,8 @@ const classes = useStyles();
 
     </Grid>
 
-    )
+    </div>
+
+    );
+    
 }

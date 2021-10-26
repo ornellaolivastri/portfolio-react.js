@@ -8,6 +8,9 @@ const useStyles = makeStyles((theme) => ({
     title: {
       flexGrow: 1,
     },
+    container: {
+      background: theme.palette.primary.main
+    }
     }));
 
 export function NavBar(){
@@ -18,15 +21,15 @@ export function NavBar(){
         <AppBar position="static">
           <Toolbar>
 
-            <IconButton edge="start" className="menuButton" color="inherit" aria-label="menu">
+            <IconButton edge="start" className="menuButton" color="primary" aria-label="menu">
               <MenuIcon />
             </IconButton>
 
-            <Typography variant="h6" className="title" > lololololo lolo lolololololololo lo lo </Typography>
+            <Typography variant="h6" color="primary" className={classes.title} > lololololo lolo lolololololololo lo lo </Typography>
             
-            <Button color="inherit">About me</Button>
-            <Button color="inherit">Studies</Button>
-            <Button color="inherit">Contact</Button>
+            <Button color="primary">About me</Button>
+            <Button color="primary">Studies</Button>
+            <Button color="primary">Contact</Button>
 
           </Toolbar>
         </AppBar>

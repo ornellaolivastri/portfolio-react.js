@@ -1,4 +1,4 @@
-export const primary = {
+export const primaryColorPalette = {
 
     50   : '#e4e4e4',
     50   : '#e0e2ed',
@@ -17,7 +17,7 @@ export const primary = {
     A700 : '#0007ef',
 };
 
-export const secondary = {
+export const secondaryColorPalette = {
     50   : '#fefafa',
     100  : '#fdf4f4',
     200  : '#fbecec',
@@ -32,5 +32,4 @@ export const secondary = {
     A200 : '#ffffff',
     A400 : '#ffffff',
     A700 : '#ffffff',
-    'contrastDefaultColor': 'dark',
 };

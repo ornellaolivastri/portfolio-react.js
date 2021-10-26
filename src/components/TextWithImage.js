@@ -5,7 +5,8 @@ const useStyles = makeStyles((theme) => ({
     img: {
         width: '100%',
         hight: 'auto',
-    }
+    },
+    padding: '2vw',
 }));
 
 const Description = (props) => {

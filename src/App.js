@@ -1,13 +1,13 @@
 import { ThemeProvider, createTheme } from '@material-ui/core/styles';
 import './App.css';
 import {NavBar, CenteredText, TextWithImage} from './components';
-import {primary, secondary} from './color-palette';
+import {primaryColorPalette, secondaryColorPalette} from './color-palette';
 
 const myContent = [
   {
     title: "title1",
     subtitle: "subtitle1",
-    descritions: [
+    descriptions: [
       "description1", 
       "description2",
     ],
@@ -17,7 +17,7 @@ const myContent = [
   {
     title: "title2",
     subtitle: "subtitle2",
-    descritions: [
+    descriptions: [
       "description3", 
       "description4",
     ],
@@ -27,8 +27,14 @@ const myContent = [
 
 const theme = createTheme({
   palette: {
-    primary: primary,
-    secondary: secondary,
+    
+    primary: {
+      main:  secondaryColorPalette[500],
+    },
+
+    secondary: {
+      main:  secondaryColorPalette[500],
+   }
   }
 });
 
@@ -43,9 +49,9 @@ function App() {
       <CenteredText />
         
        {
-        myContent.map((item, index => (
+        myContent.map((item, index) => (
           <TextWithImage TextToTheRight={index % 2 === 0} content={item} />)
-        ))
+        )
       }  
 {/*      
       <TextWithImage TextToTheRight={false} />
